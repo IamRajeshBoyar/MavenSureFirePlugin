@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <groups>
+  		<define name="metaGroupExample">
+  			<include name="homepage"></include>
+  			<include name="registration"></include>
+  		</define>
+  		<run>
+  			<include name="metaGroupExample"></include>
+  		</run>
+  		
+  </groups>
+  
+    <classes>
+      <class name="testNGpractice.GroupExample"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
